@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Rock, Paper, Scissors Game</title>
+  <!-- Bootstrap CSS for styling -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <style>
+    body {
+      background: #f0f2f5;
+      padding-top: 50px;
+    }
+    .game-container {
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      padding: 30px;
+      text-align: center;
+    }
+    .btn-move {
+      width: 100px;
+      margin: 10px;
+      font-size: 1.2rem;
+    }
+    .result {
+      margin-top: 20px;
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-6 game-container">
+        <h1>Rock, Paper, Scissors</h1>
+        <p>Choose your move:</p>
+        <div>
+          <button class="btn btn-primary btn-move" data-move="rock">Rock</button>
+          <button class="btn btn-success btn-move" data-move="paper">Paper</button>
+          <button class="btn btn-danger btn-move" data-move="scissors">Scissors</button>
+        </div>
+        <div class="result" id="resultArea"></div>
+        <div id="movesArea" class="mt-3"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- JavaScript to call the backend API and update the page -->
+  <script>
+    const buttons = document.querySelectorAll('.btn-move');
+    const resultArea = document.getElementById('resultArea');
+    const movesArea = document.getElementById('movesArea');
+
+    buttons.forEach(button => {
+      button.addEventListener('click', async () => {
+        const move = button.getAttribute('data-move');
+        try {
+          const response = await fetch(`/play?move=${move}`);
+          if (!response.ok) throw new Error("Invalid move");
+          const data = await response.json();
+          resultArea.textContent = data.result;
+          movesArea.innerHTML = `<p>You chose <strong>${data.player_move}</strong> while the computer chose <strong>${data.computer_move}</strong>.</p>`;
+        } catch (error) {
+          resultArea.textContent = "Error: " + error.message;
+          movesArea.innerHTML = "";
+        }
+      });
+    });
+  </script>
+</body>
+</html>
