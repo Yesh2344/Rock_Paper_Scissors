@@ -19,3 +19,8 @@ This project implements the classic Rock, Paper, Scissors game where players com
 
 ## Installation
 
+### Prerequisites
+
+- Python 3.6 or higher
+- Flask
+
