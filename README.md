@@ -17,3 +17,5 @@ This project implements the classic Rock, Paper, Scissors game where players com
 - Displays both player and computer moves
 - Responsive design that works on desktop and mobile devices
 
+## Installation
+
