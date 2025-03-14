@@ -10,3 +10,10 @@ This project implements the classic Rock, Paper, Scissors game where players com
 - A responsive HTML/CSS frontend styled with Bootstrap
 - JavaScript for interactive gameplay without page reloads
 
+## Features
+
+- Clean, modern user interface
+- Real-time game results
+- Displays both player and computer moves
+- Responsive design that works on desktop and mobile devices
+
