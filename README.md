@@ -39,3 +39,18 @@ cd rock-paper-scissors
 pip install flask
 ```
 
+## Usage
+
+1. Start the Flask server:
+
+```bash
+python app.py
+```
+
+2. Open your web browser and navigate to:
+
+```
+http://localhost:5000
+```
+
+3. Click on one of the three buttons (Rock, Paper, or Scissors) to make your move.
