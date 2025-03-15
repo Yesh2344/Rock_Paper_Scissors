@@ -83,3 +83,13 @@ You can customize the game by:
 - Adding new features to the Flask backend in `app.py`
 - Extending the game logic in the `determine_winner` function
 
+## Development
+
+To run the application in development mode:
+
+```bash
+flask run --debug
+```
+
+This enables hot reloading so changes to the code will be reflected immediately.
+
