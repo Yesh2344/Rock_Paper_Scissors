@@ -97,3 +97,7 @@ This enables hot reloading so changes to the code will be reflected immediately.
 
 This project is licensed under the MIT License - see the LICENSE file for details.
 
+## Acknowledgments
+
+- Bootstrap for the responsive design components
+- Flask for the simple and effective web framework
