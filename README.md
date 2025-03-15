@@ -93,3 +93,7 @@ flask run --debug
 
 This enables hot reloading so changes to the code will be reflected immediately.
 
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
+
