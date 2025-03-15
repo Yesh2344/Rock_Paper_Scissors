@@ -75,3 +75,11 @@ rock-paper-scissors/
 └── README.md       # This file
 ```
 
+## Customization
+
+You can customize the game by:
+
+- Modifying the styles in the `<style>` section of `index.html`
+- Adding new features to the Flask backend in `app.py`
+- Extending the game logic in the `determine_winner` function
+
