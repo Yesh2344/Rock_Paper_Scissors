@@ -54,3 +54,15 @@ http://localhost:5000
 ```
 
 3. Click on one of the three buttons (Rock, Paper, or Scissors) to make your move.
+
+## How to Play
+
+- Select your move by clicking one of the buttons: Rock, Paper, or Scissors
+- The computer will randomly select its move
+- The result will be displayed on the screen
+- Game rules:
+  - Rock beats Scissors
+  - Scissors beats Paper
+  - Paper beats Rock
+  - Same moves result in a tie
+
