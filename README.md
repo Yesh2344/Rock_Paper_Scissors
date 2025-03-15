@@ -66,3 +66,12 @@ http://localhost:5000
   - Paper beats Rock
   - Same moves result in a tie
 
+## Project Structure
+
+```
+rock-paper-scissors/
+├── app.py          # Flask backend application
+├── index.html      # Frontend HTML file
+└── README.md       # This file
+```
+
