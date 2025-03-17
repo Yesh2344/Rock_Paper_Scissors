@@ -101,3 +101,5 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 - Bootstrap for the responsive design components
 - Flask for the simple and effective web framework
+
+## Contact 
